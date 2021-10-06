@@ -1,0 +1,56 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.menu ul{
+    background-color: rgb(189, 230, 120);
+    list-style-type: none;
+    padding: 10px;
+}
+
+.menu ul li{
+    display: inline;
+    position: relative;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    padding: 3px;
+    transition: background 1s;
+}
+
+.menu ul li a:hover{
+    background-color: rgba(238, 89, 89, 0.753);
+}
+
+.menu ul li:hover ul{
+    display: block;
+}
+
+.menu ul ul{
+    display: none;
+    left: 0px;
+    position: absolute;
+}
+
+.menu ul ul{
+    width: 100px;
+}
+.menu ul ul li:hover ul{
+    display: block;
+}
+
+.menu ul ul li a{
+     display: inline;
+}
+
+/* especificar que todos os filhos da ul li sejan lada a lado
+e também o padding para dar espaço entre eles */
+/*#menu-h li{ 
+    display: inline;
+}*/
